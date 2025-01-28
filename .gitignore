@@ -1,0 +1,11 @@
+# General log files
+benchmark.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*.swp
+*.swo
+*.bak
