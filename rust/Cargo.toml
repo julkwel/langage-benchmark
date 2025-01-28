@@ -1,8 +1,4 @@
 [package]
-name = "rust"
+name = "benchmark"
 version = "0.1.0"
 edition = "2021"
-
-[dependencies]
-tokio = { version = "1", features = ["full", "time"] }
-rand = "0.8"

@@ -1,9 +1,8 @@
-use tokio::time::{Instant};
 use std::fs::OpenOptions;
 use std::io::Write;
+use std::time::Instant;
 
-#[tokio::main]
-async fn main() {
+fn main() {
     let start = Instant::now();
 
     let array: Vec<_> = (0..1_000_000)
