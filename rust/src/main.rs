@@ -1,9 +1,6 @@
-use tokio::time::{Instant};
-use std::fs::OpenOptions;
-use std::io::Write;
+use std::{fs::OpenOptions, io::Write, time::Instant};
 
-#[tokio::main]
-async fn main() {
+fn main() {
     let start = Instant::now();
 
     let array: Vec<_> = (0..1_000_000)
@@ -34,7 +31,11 @@ async fn main() {
         fetch_time, filter_time, map_time, reduce_time
     );
     let log_path = "../benchmark.log";
-    let mut file = OpenOptions::new().create(true).append(true).open(log_path).unwrap();
+    let mut file = OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(log_path)
+        .unwrap();
     file.write_all(output.as_bytes()).unwrap();
 
     println!("Rust benchmark results written to benchmark.log");
