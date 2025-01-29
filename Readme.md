@@ -40,6 +40,11 @@ go run main.go
 cargo run --release
 ```
 
+### **Shell**
+```sh
+sh main.sh
+```
+
 ## 📄 Benchmark Output
 
 Results are logged in the root of the project:
