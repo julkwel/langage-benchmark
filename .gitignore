@@ -9,3 +9,15 @@ Thumbs.db
 *.swp
 *.swo
 *.bak
+
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binary files
+*.exe
+*.out
+
+# IDE-specific files
+.idea/
+.vscode/
