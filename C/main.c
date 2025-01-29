@@ -71,7 +71,7 @@ int main() {
       "Time to reduce: %.2f ms\n",
       fetch_time, filter_time, map_time, reduce_time);
 
-  FILE* file = fopen("../benchmark.log", "w");
+  FILE* file = fopen("../benchmark.log", "a+");
   if (file == NULL) {
     perror("Error creating benchmark file");
     return EXIT_FAILURE;
