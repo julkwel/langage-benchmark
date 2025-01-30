@@ -15,6 +15,11 @@ Execute the code for each language as follows:
 sh run.sh
 ```
 
+### **C#**
+```sh
+dotnet clean && dotnet build -c release && dotnet run -c release
+```
+
 ### **Python**
 ```sh
 python index.py
